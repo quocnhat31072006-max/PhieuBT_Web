@@ -36,18 +36,19 @@ B5: Trình duyệt hiện thị trang Web
 -Trang này bị SEO thấp vì lạm dụng quá nhiều thẻ div nên google khó hiểu cấu trúc nội dung html(không có semantic)
 
 những lỗi semantic trong code:
-1: <div class="header"> sửa lại thành <header>
-2: <div class="menu"> sửa lại thành <nav>
-3: <div><a href="/"> <a href = "/">
-   <div><a href="/products"> sửa thành <a href = "/products">
-4: <div class="main"> sửa thành <main>
-5: <div class="product"> sửa thành <article>
-6: <div class="image"><img src="iphone.jpg"> sửa thành <img src="iphone.jpg">
-7: <div class="footer">sửa thành <footer>
-8: <div class="price"> sửa thành <p>
+
+    <div class="header"> sửa lại thành <header>
+    <div class="menu"> sửa lại thành <nav>
+    <div><a href="/"> <a href = "/">
+    <div><a href="/products"> sửa thành <a href = "/products">
+    <div class="main"> sửa thành <main>
+    <div class="product"> sửa thành <article>
+    <div class="image"><img src="iphone.jpg"> sửa thành <img src="iphone.jpg">
+    <div class="footer">sửa thành <footer>
+    <div class="price"> sửa thành <p>
 
 code hoàn chỉnh:
-```html
+```
 <header>
     <div class="logo">ShopTLU</div>
     <nav>
