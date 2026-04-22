@@ -130,6 +130,7 @@ lỗi 12: Dòng 48 - ko đóng thẻ html - </html>
 
 2.
 Trang web không sử dụng thẻ `<table>` để hiển thị dữ liệu mà thay vào đó sử dụng `<div>` kết hợp CSS (Flexbox/Grid).
+
 3.
 Form không khai báo thuộc tính action và method, cho thấy dữ liệu được xử lý bằng JavaScript. Trong form sử dụng input type="text" để nhập nội dung và button type="button" để thực hiện tìm kiếm.
 
@@ -268,6 +269,5 @@ Form không khai báo thuộc tính action và method, cho thấy dữ liệu đ
 ### Câu C2
 
 Bài làm:
-```
-Việc Nói “cứ dùng <div> cho mọi thứ là đủ” thì đúng là nhanh thật, nhưng về lâu dài lại khá hại. Thứ nhất là SEO: công cụ tìm kiếm không chỉ đọc chữ mà còn nhìn vào cấu trúc HTML để hiểu trang web. Nếu bạn dùng toàn <div>, nó khó phân biệt đâu là nội dung chính, đâu là menu, đâu là tiêu đề, trong khi các thẻ như <header>, <main>, <article> giúp nó hiểu rõ hơn và xếp hạng tốt hơn. Thứ hai là accessibility: những người dùng screen reader sẽ dựa vào các thẻ semantic để điều hướng nhanh giữa các phần của trang; nếu toàn <div> thì gần như “mù đường”. Ví dụ đơn giản, một trang blog dùng <article> cho từng bài viết thì screen reader có thể báo “bài viết mới”, còn nếu chỉ là <div> thì mất hết ý nghĩa đó. Tuy nhiên, không phải lúc nào <div> cũng sai — nó vẫn rất hợp lý khi bạn chỉ cần một khối để chia layout hoặc style (ví dụ dùng flex/grid để căn chỉnh). Tóm lại, semantic HTML không chỉ là “học cho có”, mà giúp code rõ ràng hơn, thân thiện với máy tìm kiếm và cả người dùng thực tế.
-```
+
+Việc Nói “cứ dùng `<div>` cho mọi thứ là đủ” thì đúng là nhanh thật, nhưng về lâu dài lại khá hại. Thứ nhất là SEO: công cụ tìm kiếm không chỉ đọc chữ mà còn nhìn vào cấu trúc HTML để hiểu trang web. Nếu bạn dùng toàn `<div>`, nó khó phân biệt đâu là nội dung chính, đâu là menu, đâu là tiêu đề, trong khi các thẻ như `<header>`, `<main>`, `<article>` giúp nó hiểu rõ hơn và xếp hạng tốt hơn. Thứ hai là accessibility: những người dùng screen reader sẽ dựa vào các thẻ semantic để điều hướng nhanh giữa các phần của trang; nếu toàn `<div>` thì gần như không thể. Ví dụ, một trang blog dùng `<article>` cho từng bài viết thì screen reader có thể báo “bài viết mới”, còn nếu chỉ là `<div>` thì mất hết ý nghĩa đó. Tuy nhiên, không phải lúc nào `<div>` cũng sai — nó vẫn rất hợp lý khi bạn chỉ cần một khối để chia layout hoặc style (ví dụ dùng flex/grid để căn chỉnh). Tóm lại, semantic HTML không chỉ là “học cho có”, mà giúp code rõ ràng hơn, thân thiện với máy tìm kiếm và cả người dùng thực tế.
