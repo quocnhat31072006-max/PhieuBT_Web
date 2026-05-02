@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter' , -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+/* header */
+header {
+    background: linear-gradient(to right,white,rgba(0, 179, 255, 0.646));
+    color:  white;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 15px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+nav a.active{
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+/* table */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: rgb(0, 217, 255);
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover{
+    background-color: aqua;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* footer */
+
+footer{
+    background-color: rgba(0, 55, 255, 0.772);
+    color: #ccc;
+    text-align: center;
+}
+
+/* Bổ sung */
+
+#contact{
+    background-color: rgba(250, 235, 215, 0.671);
+}
+
+.caption{
+    font-style: oblique;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
