@@ -1,0 +1,48 @@
+.container {
+    width: 960px;
+    margin: 20px auto;
+
+}
+
+.sidebar, .content {
+    float: left;
+    border: 1px solid #ccc;
+}
+
+/*  lỗi */
+.broken .sidebar {
+    width: 300px;
+    padding: 20px;
+}
+
+.broken .content {
+    width: 660px;
+    padding: 30px;
+}
+
+/* ✅ fix 1: border-box */
+.fix-box .sidebar,
+.fix-box .content {
+    box-sizing: border-box;
+}
+
+.fix-box .sidebar {
+    width: 300px;
+    padding: 20px;
+}
+
+.fix-box .content {
+    width: 660px;
+    padding: 30px;
+}
+
+/* ✅ fix 2: tính tay */
+.fix-manual .sidebar {
+    width: 258px;
+    padding: 20px;
+}
+
+.fix-manual .content {
+    width: 598px;
+    padding: 30px;
+}
